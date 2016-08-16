@@ -11,7 +11,11 @@ public class Chapter01_02 {
      * O(NlogN) solution.
      */
     boolean checkPermutation(String s, String t) {
-        if (s == null || t == null || s.length() != t.length()) {
+        if (s == null || t == null) {
+            throw new IllegalArgumentException("String argument is null");
+        }
+
+        if (s.length() != t.length()) {
             return false;
         }
 

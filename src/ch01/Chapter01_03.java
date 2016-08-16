@@ -6,6 +6,10 @@ package ch01;
 public class Chapter01_03 {
 
     void URLify(char[] s, int len) {
+        if (s == null) {
+            throw new IllegalArgumentException("Char[] argument is null");
+        }
+
         boolean is = false;
         int n = s.length - 1;
         for (int i = n; i >= 0 && n >= 0; --i) {

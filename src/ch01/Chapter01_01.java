@@ -12,8 +12,10 @@ public class Chapter01_01 {
      */
     boolean isUnique(String s) {
         if (s == null) {
-            return false;
-        } else if (s.length() <= 1) {
+            throw new IllegalArgumentException("String argument is null");
+        }
+
+        if (s.length() <= 1) {
             return true;
         }
 
