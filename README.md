@@ -1,7 +1,7 @@
 # cracking-the-coding-interview
 Solutions to problems from "Cracking The Coding Interview" book
 
-#### Chapter 01 -- 0 / 9
+#### Chapter 01 -- 7 / 9  (Unsolved: 1.5, 1.7)
 #### Chapter 02 -- 0 / 8
 #### Chapter 03 -- 0 / 6
 #### Chapter 04 -- 0 / 12
