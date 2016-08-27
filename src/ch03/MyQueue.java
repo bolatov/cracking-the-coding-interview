@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 /**
  * Created by almer on 24/08/16.
  */
-public class MyQueue<T> {
+public class MyQueue<T> implements IQueue<T> {
 
     private static class QueueNode<T> {
         private T data;
@@ -17,6 +17,7 @@ public class MyQueue<T> {
     }
 
     private QueueNode<T> first;
+
     private QueueNode<T> last;
 
     public void add(T item) {
