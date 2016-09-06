@@ -5,7 +5,7 @@ package ch03;
  */
 public class Chapter03_05 {
 
-    void sort(MyStack<Integer> s) {
+    static void sort(MyStack<Integer> s) {
         MyStack<Integer> t = new MyStack<>(); // temporary stack
         int i; // variable for temporary integer;
         while (true) {

@@ -1,6 +1,5 @@
 package ch03;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -14,13 +13,6 @@ import static org.junit.Assert.assertTrue;
  */
 public class TestChapter03_05 {
 
-    private Chapter03_05 ch;
-
-    @Before
-    public void setUp() {
-        this.ch = new Chapter03_05();
-    }
-
     @Test
     public void testSortStackWithSequentialInts() {
         MyStack<Integer> stack = new MyStack<>();
@@ -32,7 +24,7 @@ public class TestChapter03_05 {
     }
 
     void testIfSorted(MyStack<Integer> stack) {
-        ch.sort(stack);
+        Chapter03_05.sort(stack);
         List<Integer> lst = new ArrayList<>();
         while (!stack.isEmpty()) {
             lst.add(stack.pop());
